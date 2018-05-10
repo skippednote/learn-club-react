@@ -12,6 +12,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
     "eject": "react-scripts eject",
     "flow": "flow",
     "commitmsg": "commitlint -e $GIT_PARAMS",
@@ -28,6 +30,8 @@
     "@storybook/react": "^3.4.3",
     "babel-core": "^6.26.3",
     "babel-runtime": "^6.26.0",
+    "cypress": "^2.1.0",
+    "eslint-plugin-cypress": "^2.0.1",
     "husky": "^0.14.3",
     "lint-staged": "^7.1.0",
     "prettier": "^1.12.1"

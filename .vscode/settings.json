@@ -1,0 +1,6 @@
+{
+  "jest.pathToJest": "npm run test:unit --",
+  "jest.rootPath": "frontend",
+  "jest.showCoverageOnLoad": false,
+  "flow.pathToFlow": "${workspaceRoot}/frontend/node_modules/.bin/flow"
+}

@@ -1,0 +1,4 @@
+name: lcr
+recipe: drupal8
+config:
+  webroot: backend/web

@@ -1,40 +1,50 @@
 // @flow
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { Index as Button } from '../Button';
+import { Count } from './Counter.styles';
 
 type State = {
   count: number
-}
+};
 
 class Counter extends Component<{}, State> {
   state = {
     count: 0
-  }
+  };
 
   increment = () => {
-    this.setState(({ count }) => ({ count: count + 1 }))
-  }
+    this.setState(({ count }) => ({ count: count + 1 }));
+  };
 
   decrement = () => {
-    this.setState(({ count }) => ({ count: count - 1 }))
-  }
+    this.setState(({ count }) => ({ count: count - 1 }));
+  };
 
   render() {
-    const { count } = this.state
+    const { count } = this.state;
 
     return (
       <div className="counter">
-        <button className="increment" onClick={this.increment}>
+        <Button
+          apperence="primary"
+          className="increment"
+          onClick={this.increment}
+        >
           +
-        </button>
+        </Button>
 
-        <span className="count">{count}</span>
+        <Count className="count">{count}</Count>
 
-        <button className="decrement" onClick={this.decrement}>
+        <Button
+          apperence="destructive"
+          className="decrement"
+          onClick={this.decrement}
+        >
           -
-        </button>
+        </Button>
       </div>
-    )
+    );
   }
 }
 
-export default Counter
+export default Counter;

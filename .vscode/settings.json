@@ -3,5 +3,6 @@
   "jest.rootPath": "frontend",
   "jest.showCoverageOnLoad": false,
   "flow.pathToFlow": "${workspaceRoot}/frontend/node_modules/.bin/flow",
-  "javascript.validate.enable": false
+  "javascript.validate.enable": false,
+  "prettier.singleQuote": true
 }

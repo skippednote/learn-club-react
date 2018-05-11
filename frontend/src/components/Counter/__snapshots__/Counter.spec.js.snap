@@ -4,22 +4,24 @@ exports[`Home matches snapshot 1`] = `
 <div
   className="counter"
 >
-  <button
+  <Button
+    apperence="primary"
     className="increment"
     onClick={[Function]}
   >
     +
-  </button>
-  <span
+  </Button>
+  <Count
     className="count"
   >
     0
-  </span>
-  <button
+  </Count>
+  <Button
+    apperence="destructive"
     className="decrement"
     onClick={[Function]}
   >
     -
-  </button>
+  </Button>
 </div>
 `;

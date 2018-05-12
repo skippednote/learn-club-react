@@ -6,7 +6,7 @@ type Props = {
   children: React.Node,
   apperence: string,
   className?: string,
-  onClick(): void
+  onClick?: () => void
 };
 
 export const Index = ({ children, apperence, className, onClick }: Props) => (

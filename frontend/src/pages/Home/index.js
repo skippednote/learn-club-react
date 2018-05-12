@@ -1,6 +1,7 @@
 // @flow
-import React from 'react'
-import Counter from '../../components/Counter'
+import React from 'react';
+import Counter from '../../components/Counter';
+import PeopleList from '../../components/PeopleList';
 
 class Home extends React.Component<{}> {
   render() {
@@ -8,8 +9,9 @@ class Home extends React.Component<{}> {
       <div>
         <h1>Learn Club - React</h1>
         <Counter />
+        <PeopleList />
       </div>
-    )
+    );
   }
 }
-export default Home
+export default Home;

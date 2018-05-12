@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PeopleList fetches list of person on #componentDidMount 1`] = `
+<ul
+  className="peoplelist"
+>
+  <PeopleItem
+    key="0"
+  >
+    <span>
+      Ankur
+    </span>
+    <span>
+      CEO
+    </span>
+  </PeopleItem>
+  <PeopleItem
+    key="1"
+  >
+    <span>
+      Aliya
+    </span>
+    <span>
+      Developer
+    </span>
+  </PeopleItem>
+  <PeopleItem
+    key="2"
+  >
+    <span>
+      Bassam
+    </span>
+    <span>
+      Developer
+    </span>
+  </PeopleItem>
+</ul>
+`;
+
+exports[`PeopleList matches snapshot 1`] = `
+<div
+  className="loading"
+>
+  Loading the list of People...
+</div>
+`;

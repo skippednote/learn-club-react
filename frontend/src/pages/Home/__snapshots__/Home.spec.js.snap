@@ -6,5 +6,6 @@ exports[`Home matches snapshot 1`] = `
     Learn Club - React
   </h1>
   <Counter />
+  <PeopleList />
 </div>
 `;

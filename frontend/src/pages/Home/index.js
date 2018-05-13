@@ -2,7 +2,7 @@
 import React from 'react';
 import Counter from '../../components/Counter';
 import PeopleList from '../../components/PeopleList';
-import { Logo } from './Home.styles';
+import Logo from '../../components/Logo';
 
 class Home extends React.Component<{}> {
   render() {

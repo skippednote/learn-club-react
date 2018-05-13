@@ -38,9 +38,7 @@ exports[`PeopleList fetches list of person on #componentDidMount 1`] = `
 `;
 
 exports[`PeopleList matches snapshot 1`] = `
-<div
-  className="loading"
->
-  Loading the list of People...
-</div>
+<ul
+  className="peoplelist"
+/>
 `;

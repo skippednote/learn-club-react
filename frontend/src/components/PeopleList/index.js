@@ -1,6 +1,5 @@
 // @flow
 import React, { Component } from 'react';
-import axios from 'axios';
 import { PeopleItem } from './PeopleList.styles';
 
 type Person = {
@@ -9,35 +8,15 @@ type Person = {
   role: string
 };
 
-type State = {
+type Props = {
   people: Array<Person>,
   error: string | null,
   loading: boolean
 };
 
-class PeopleList extends Component<{}, State> {
-  state: State = {
-    people: [],
-    error: null,
-    loading: false
-  };
-
-  async componentDidMount() {
-    this.setState({ loading: true });
-
-    try {
-      const { data: people }: { data: Array<Person> } = await axios.get(
-        '/people.json'
-      );
-      this.setState({ people, loading: false });
-    } catch (error) {
-      console.log(error);
-      this.setState({ error: error, loading: false });
-    }
-  }
-
+class PeopleList extends Component<Props> {
   render() {
-    const { people, error, loading } = this.state;
+    const { people, error, loading } = this.props;
     if (error) {
       return (
         <div className="error">There was an error loading list of People.</div>

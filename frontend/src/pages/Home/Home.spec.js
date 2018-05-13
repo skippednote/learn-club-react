@@ -9,6 +9,12 @@ describe('Home', () => {
     expect(toJSON(wrapper)).toMatchSnapshot();
   });
 
+  it('renders the Logo', () => {
+    const wrapper = shallow(<Home />);
+    const logo = wrapper.find('Logo');
+    expect(logo).toHaveLength(1);
+  });
+
   it('renders the heading', () => {
     const wrapper = shallow(<Home />);
     const heading = wrapper.find('h1').text();

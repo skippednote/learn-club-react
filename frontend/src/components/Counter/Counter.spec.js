@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 import toJSON from 'enzyme-to-json';
 import Counter from './index';
 
-describe('Home', () => {
+describe('Counter', () => {
   it('matches snapshot', () => {
     const wrapper = shallow(<Counter />);
     expect(toJSON(wrapper)).toMatchSnapshot();

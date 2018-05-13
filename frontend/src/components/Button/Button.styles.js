@@ -23,3 +23,4 @@ export const Button = styled('button')`
   ${styles['base']};
   ${({ apperence }) => styles[apperence]};
 `;
+Button.displayName = 'Button';

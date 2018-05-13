@@ -1,7 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`PeopleList fetches list of person on #componentDidMount 1`] = `
-<ul
+exports[`PeopleList renders a error message when request fails 1`] = `
+<div
+  className="error"
+>
+  There was an error loading list of People.
+</div>
+`;
+
+exports[`PeopleList renders a list of people when request passes 1`] = `
+<PeopleList
   className="peoplelist"
 >
   <PeopleItem
@@ -34,11 +42,13 @@ exports[`PeopleList fetches list of person on #componentDidMount 1`] = `
       Developer
     </span>
   </PeopleItem>
-</ul>
+</PeopleList>
 `;
 
-exports[`PeopleList matches snapshot 1`] = `
-<ul
-  className="peoplelist"
-/>
+exports[`PeopleList renders a loading message when requesting data 1`] = `
+<div
+  className="loading"
+>
+  Loading the list of People...
+</div>
 `;

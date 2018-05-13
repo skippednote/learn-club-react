@@ -3,17 +3,25 @@ import { shallow } from 'enzyme';
 import toJSON from 'enzyme-to-json';
 import PeopleList from './index';
 
-describe('PeopleList', () => {
-  it('matches snapshot', () => {
-    const props = {
-      people: [],
-      error: null,
-      loading: false
-    };
-    const wrapper = shallow(<PeopleList {...props} />);
-    expect(toJSON(wrapper)).toMatchSnapshot();
-  });
+const people = [
+  {
+    id: 0,
+    name: 'Ankur',
+    role: 'CEO'
+  },
+  {
+    id: 1,
+    name: 'Aliya',
+    role: 'Developer'
+  },
+  {
+    id: 2,
+    name: 'Bassam',
+    role: 'Developer'
+  }
+];
 
+describe('PeopleList', () => {
   it('renders a loading message when requesting data', () => {
     const props = {
       people: [],
@@ -23,6 +31,7 @@ describe('PeopleList', () => {
     const wrapper = shallow(<PeopleList {...props} />);
     const loading = wrapper.find('.loading');
     expect(loading).toHaveLength(1);
+    expect(toJSON(wrapper)).toMatchSnapshot();
   });
 
   it('renders a error message when request fails', () => {
@@ -34,26 +43,10 @@ describe('PeopleList', () => {
     const wrapper = shallow(<PeopleList {...props} />);
     const loading = wrapper.find('.error');
     expect(loading).toHaveLength(1);
+    expect(toJSON(wrapper)).toMatchSnapshot();
   });
 
   it('renders a list of people when request passes', () => {
-    const people = [
-      {
-        id: 0,
-        name: 'Ankur',
-        role: 'CEO'
-      },
-      {
-        id: 1,
-        name: 'Aliya',
-        role: 'Developer'
-      },
-      {
-        id: 2,
-        name: 'Bassam',
-        role: 'Developer'
-      }
-    ];
     const props = {
       people: people,
       error: null,
@@ -62,5 +55,6 @@ describe('PeopleList', () => {
     const wrapper = shallow(<PeopleList {...props} />);
     const peopleItem = wrapper.find('PeopleItem');
     expect(peopleItem).toHaveLength(3);
+    expect(toJSON(wrapper)).toMatchSnapshot();
   });
 });

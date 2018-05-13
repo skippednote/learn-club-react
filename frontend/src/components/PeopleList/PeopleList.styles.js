@@ -1,6 +1,12 @@
 import styled from 'react-emotion';
 
-export const PeopleItem = styled('li')`
+export const List = styled('ul')`
+  padding-left: 0;
+  list-style: none;
+`;
+List.displayName = 'PeopleList';
+
+export const Item = styled('li')`
   width: 300px;
   text-align: left;
   display: flex;
@@ -10,4 +16,4 @@ export const PeopleItem = styled('li')`
   font-size: 14px;
   border-bottom: 1px solid #ddd;
 `;
-PeopleItem.displayName = 'PeopleItem';
+Item.displayName = 'PeopleItem';

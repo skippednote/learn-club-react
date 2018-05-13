@@ -1,6 +1,6 @@
 // @flow
 import React, { Component } from 'react';
-import { PeopleItem } from './PeopleList.styles';
+import { List, Item } from './PeopleList.styles';
 
 type Person = {
   id: number,
@@ -26,14 +26,14 @@ class PeopleList extends Component<Props> {
       return <div className="loading">Loading the list of People...</div>;
     }
     return (
-      <ul className="peoplelist">
+      <List className="peoplelist">
         {people.map(({ id, name, role }) => (
-          <PeopleItem key={id}>
+          <Item key={id}>
             <span>{name}</span>
             <span>{role}</span>
-          </PeopleItem>
+          </Item>
         ))}
-      </ul>
+      </List>
     );
   }
 }

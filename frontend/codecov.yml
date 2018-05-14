@@ -1,0 +1,4 @@
+ignore:
+  - "src/*.story.js"
+  - "src/*.styles.js"
+  - "src/registerServiceWorker.js"

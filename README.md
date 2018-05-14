@@ -1,6 +1,7 @@
 # Learn Club - React
 
 [![Build Status](https://travis-ci.com/skippednote/learn-club-react.svg?branch=master)](https://travis-ci.com/skippednote/learn-club-react)
+[![codecov](https://codecov.io/gh/skippednote/learn-club-react/branch/master/graph/badge.svg)](https://codecov.io/gh/skippednote/learn-club-react)
 
 ## Setup
 

@@ -6,9 +6,9 @@ cache:
   directories:
     - ~/.npm
     - frontend/node_modules
-before_install: 
+before_install:
   - cd frontend
-install: 
+install:
   - npm install
 script:
   - npm test

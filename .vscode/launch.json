@@ -1,0 +1,20 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "XDebug",
+      "type": "php",
+      "request": "launch",
+      "port": 9000,
+      "log": true,
+      // We used to do this in previous versions of VS Code:
+      // "localSourceRoot": "${workspaceRoot}/",
+      // "serverSourceRoot": "/app/",
+      //
+      // But this has been deprecated and we now use this:
+      "pathMappings": {
+        "/app/": "${workspaceRoot}/"
+      }
+    }
+  ]
+}

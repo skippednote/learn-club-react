@@ -1,7 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import toJSON from 'enzyme-to-json';
-import axios from 'axios';
 import Home from './index';
 
 describe('Home', () => {
@@ -26,18 +25,5 @@ describe('Home', () => {
     const wrapper = shallow(<Home />);
     const counter = wrapper.find('Counter');
     expect(counter).toHaveLength(1);
-  });
-
-  it('renders PeopleList component', () => {
-    const wrapper = shallow(<Home />);
-    const counter = wrapper.find('PeopleList');
-    expect(counter).toHaveLength(1);
-  });
-
-  it('requests data on #componentDidMount', async () => {
-    const wrapper = shallow(<Home />);
-    await wrapper.instance().componentDidMount();
-    expect(axios.get).toHaveBeenCalled();
-    expect(axios.get).toHaveBeenCalledWith('/people.json');
   });
 });

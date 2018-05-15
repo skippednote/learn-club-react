@@ -11,7 +11,7 @@ describe('App', () => {
 
   it('renders Home component', () => {
     const wrapper = shallow(<App />);
-    const home = wrapper.find('Home');
-    expect(home).toHaveLength(1);
+    const routes = wrapper.find('Routes');
+    expect(routes).toHaveLength(1);
   });
 });

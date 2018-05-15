@@ -6,7 +6,9 @@ import { Menu, MenuItem } from './Header.styles';
 
 const Header = () => (
   <header>
-    <Logo>⚛</Logo>
+    <Link to="/">
+      <Logo>⚛</Logo>
+    </Link>
     <h1>Learn Club - React</h1>
     <Menu>
       <MenuItem>

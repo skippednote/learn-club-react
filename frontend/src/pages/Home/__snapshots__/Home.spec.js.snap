@@ -2,12 +2,6 @@
 
 exports[`Home matches snapshot 1`] = `
 <div>
-  <Logo>
-    ⚛
-  </Logo>
-  <h1>
-    Learn Club - React
-  </h1>
   <Counter />
 </div>
 `;

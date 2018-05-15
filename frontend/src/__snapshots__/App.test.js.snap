@@ -2,6 +2,7 @@
 
 exports[`App matches snapshot 1`] = `
 <Wrapper>
+  <Header />
   <Routes />
 </Wrapper>
 `;

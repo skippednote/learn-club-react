@@ -9,18 +9,6 @@ describe('Home', () => {
     expect(toJSON(wrapper)).toMatchSnapshot();
   });
 
-  it('renders the Logo', () => {
-    const wrapper = shallow(<Home />);
-    const logo = wrapper.find('Logo');
-    expect(logo).toHaveLength(1);
-  });
-
-  it('renders the heading', () => {
-    const wrapper = shallow(<Home />);
-    const heading = wrapper.find('h1').text();
-    expect(heading).toEqual('Learn Club - React');
-  });
-
   it('renders Counter component', () => {
     const wrapper = shallow(<Home />);
     const counter = wrapper.find('Counter');

@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Counter matches snapshot 1`] = `
+<header>
+  <Logo>
+    ⚛
+  </Logo>
+  <h1>
+    Learn Club - React
+  </h1>
+</header>
+`;

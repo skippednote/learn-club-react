@@ -8,5 +8,23 @@ exports[`Counter matches snapshot 1`] = `
   <h1>
     Learn Club - React
   </h1>
+  <Menu>
+    <MenuItem>
+      <Link
+        replace={false}
+        to="/"
+      >
+        Home
+      </Link>
+    </MenuItem>
+    <MenuItem>
+      <Link
+        replace={false}
+        to="/people"
+      >
+        People
+      </Link>
+    </MenuItem>
+  </Menu>
 </header>
 `;

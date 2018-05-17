@@ -1,4 +1,4 @@
-const people = [
+const fixture = [
   {
     id: 0,
     name: 'Ankur',
@@ -17,5 +17,6 @@ const people = [
 ];
 
 module.exports = {
-  get: jest.fn(() => Promise.resolve({ data: people }))
+  fixture,
+  get: jest.fn(() => Promise.resolve({ data: fixture }))
 };

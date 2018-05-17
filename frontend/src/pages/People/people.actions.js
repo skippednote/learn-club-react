@@ -4,7 +4,7 @@ import type {
   GetPeopleFailureAction
 } from 'people.types';
 
-export function getPeople(): GetPeopleAction {
+export function getPeopleRequest(): GetPeopleAction {
   return {
     type: 'GET_PEOPLE',
     loading: true

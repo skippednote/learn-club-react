@@ -1,17 +1,19 @@
 import React, { Fragment } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Route } from 'react-router-dom';
+import { ConnectedRouter } from 'react-router-redux';
+import { history } from '../store';
 import Home from '../pages/Home';
 import People from '../pages/People';
 import Header from '../components/Header';
 
 const Routes = () => (
-  <Router>
+  <ConnectedRouter history={history}>
     <Fragment>
       <Header />
       <Route path="/" component={Home} exact />
       <Route path="/people" component={People} exact />
     </Fragment>
-  </Router>
+  </ConnectedRouter>
 );
 Routes.displayName = 'Routes';
 

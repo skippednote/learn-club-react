@@ -1,47 +1,35 @@
 // @flow
 import React from 'react';
 import axios from 'axios';
+import { connect } from 'react-redux';
+import type { Person, Props } from './people.types';
+import {
+  getPeople,
+  getPeopleSuccess,
+  getPeopleFailure
+} from './people.actions';
 import PeopleList from '../../components/PeopleList';
 
-type Person = {
-  id: number,
-  name: string,
-  role: string
-};
-
-type State = {
-  people: Array<Person>,
-  error: string | null,
-  loading: boolean
-};
-
-class People extends React.Component<{}, State> {
-  state: State = {
-    people: [],
-    error: null,
-    loading: false
-  };
-
+export class People extends React.Component<Props> {
   async componentDidMount() {
-    this.setState({ loading: true });
+    const { dispatch } = this.props;
+    dispatch(getPeople());
 
     try {
       const { data: people }: { data: Array<Person> } = await axios.get(
         '/people.json'
       );
-      this.setState({ people, loading: false });
+      dispatch(getPeopleSuccess(people));
     } catch (error) {
-      this.setState({ error: error, loading: false });
+      dispatch(getPeopleFailure(error));
     }
   }
-  render() {
-    const { people, error, loading } = this.state;
 
-    return (
-      <div>
-        <PeopleList people={people} error={error} loading={loading} />
-      </div>
-    );
+  render() {
+    const { people, error, loading }: Props = this.props;
+    return <PeopleList people={people} error={error} loading={loading} />;
   }
 }
-export default People;
+
+const mapStateToProps = state => state.PeopleReducer;
+export default connect(mapStateToProps)(People);

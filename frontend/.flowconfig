@@ -4,10 +4,13 @@
 [include]
 
 [libs]
+flow-typed
 
 [lints]
 
 [options]
+suppress_comment=.*\\$FlowFixMe
+suppress_comment=.*\\$FlowIssue
 module.file_ext=.js
 
 [strict]

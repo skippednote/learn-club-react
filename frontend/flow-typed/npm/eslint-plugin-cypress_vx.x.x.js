@@ -14,7 +14,7 @@
  */
 
 declare module 'eslint-plugin-cypress' {
-  declare module.exports: any
+  declare module.exports: any;
 }
 
 /**
@@ -25,8 +25,8 @@ declare module 'eslint-plugin-cypress' {
 
 // Filename aliases
 declare module 'eslint-plugin-cypress/index' {
-  declare module.exports: $Exports<'eslint-plugin-cypress'>
+  declare module.exports: $Exports<'eslint-plugin-cypress'>;
 }
 declare module 'eslint-plugin-cypress/index.js' {
-  declare module.exports: $Exports<'eslint-plugin-cypress'>
+  declare module.exports: $Exports<'eslint-plugin-cypress'>;
 }

@@ -1,19 +1,19 @@
 // flow-typed signature: 7be2af8800fdadaea6ac0404d256bafc
 // flow-typed version: 6ce6a0467c/enzyme_v3.x.x/flow_>=v0.53.x
 
-import * as React from 'react'
+import * as React from 'react';
 
 declare module 'enzyme' {
   declare type PredicateFunction<T: Wrapper> = (
     wrapper: T,
     index: number
-  ) => boolean
-  declare type NodeOrNodes = React.Node | Array<React.Node>
-  declare type EnzymeSelector = string | Class<React.Component<*, *>> | Object
+  ) => boolean;
+  declare type NodeOrNodes = React.Node | Array<React.Node>;
+  declare type EnzymeSelector = string | Class<React.Component<*, *>> | Object;
 
   // CheerioWrapper is a type alias for an actual cheerio instance
   // TODO: Reference correct type from cheerio's type declarations
-  declare type CheerioWrapper = any
+  declare type CheerioWrapper = any;
 
   declare class Wrapper {
     find(selector: EnzymeSelector): this;
@@ -100,7 +100,7 @@ declare module 'enzyme' {
   declare function shallow(
     node: React.Node,
     options?: { context?: Object, disableLifecycleMethods?: boolean }
-  ): ShallowWrapper
+  ): ShallowWrapper;
   declare function mount(
     node: React.Node,
     options?: {
@@ -108,11 +108,11 @@ declare module 'enzyme' {
       attachTo?: HTMLElement,
       childContextTypes?: Object
     }
-  ): ReactWrapper
+  ): ReactWrapper;
   declare function render(
     node: React.Node,
     options?: { context?: Object }
-  ): CheerioWrapper
+  ): CheerioWrapper;
 
   declare module.exports: {
     configure(options: {
@@ -124,5 +124,5 @@ declare module 'enzyme' {
     shallow: typeof shallow,
     ShallowWrapper: typeof ShallowWrapper,
     ReactWrapper: typeof ReactWrapper
-  }
+  };
 }

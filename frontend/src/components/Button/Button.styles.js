@@ -20,7 +20,7 @@ const styles = {
 };
 
 export const Button = styled('button')`
-  ${styles['base']};
+  ${styles.base};
   ${({ apperence }) => styles[apperence]};
 `;
 Button.displayName = 'Button';

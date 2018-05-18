@@ -1,13 +1,13 @@
 // @flow
 import React from 'react';
 import { connect } from 'react-redux';
-import type { Props } from './people.types';
+import type { Props, Dispatch, Person } from './people.types';
 import { getPeopleRequest } from './people.actions';
 import PeopleList from '../../components/PeopleList';
 
 export class People extends React.Component<Props> {
   async componentDidMount() {
-    const { dispatch } = this.props;
+    const { dispatch }: { dispatch: Dispatch } = this.props;
     dispatch(getPeopleRequest());
   }
 
@@ -17,5 +17,11 @@ export class People extends React.Component<Props> {
   }
 }
 
-const mapStateToProps = ({ people }) => people;
+const mapStateToProps = ({
+  people
+}: {
+  people: Array<Person>
+}): Array<Person> => people;
+
+// $FlowIssue
 export default connect(mapStateToProps)(People);

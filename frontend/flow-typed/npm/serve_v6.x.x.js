@@ -17,14 +17,14 @@ declare module 'serve' {
     treeless?: boolean,
     unzipped?: boolean,
     version?: boolean
-  |}
+  |};
 
   declare type Result = {
     stop: () => void
-  }
+  };
 
   declare export default function serve(
     directory: string,
     options: Options
-  ): Result
+  ): Result;
 }

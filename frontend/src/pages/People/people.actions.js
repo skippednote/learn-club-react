@@ -1,8 +1,10 @@
+// @flow
 import type {
+  Person,
   GetPeopleAction,
   GetPeopleSuccessAction,
   GetPeopleFailureAction
-} from 'people.types';
+} from './people.types';
 
 export function getPeopleRequest(): GetPeopleAction {
   return {

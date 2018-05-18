@@ -14,7 +14,7 @@
  */
 
 declare module 'lint-staged' {
-  declare module.exports: any
+  declare module.exports: any;
 }
 
 /**
@@ -23,86 +23,86 @@ declare module 'lint-staged' {
  * needed.
  */
 declare module 'lint-staged/src/calcChunkSize' {
-  declare module.exports: any
+  declare module.exports: any;
 }
 
 declare module 'lint-staged/src/checkPkgScripts' {
-  declare module.exports: any
+  declare module.exports: any;
 }
 
 declare module 'lint-staged/src/findBin' {
-  declare module.exports: any
+  declare module.exports: any;
 }
 
 declare module 'lint-staged/src/generateTasks' {
-  declare module.exports: any
+  declare module.exports: any;
 }
 
 declare module 'lint-staged/src/getConfig' {
-  declare module.exports: any
+  declare module.exports: any;
 }
 
 declare module 'lint-staged/src/index' {
-  declare module.exports: any
+  declare module.exports: any;
 }
 
 declare module 'lint-staged/src/makeCmdTasks' {
-  declare module.exports: any
+  declare module.exports: any;
 }
 
 declare module 'lint-staged/src/printErrors' {
-  declare module.exports: any
+  declare module.exports: any;
 }
 
 declare module 'lint-staged/src/resolveGitDir' {
-  declare module.exports: any
+  declare module.exports: any;
 }
 
 declare module 'lint-staged/src/resolveTaskFn' {
-  declare module.exports: any
+  declare module.exports: any;
 }
 
 declare module 'lint-staged/src/runAll' {
-  declare module.exports: any
+  declare module.exports: any;
 }
 
 // Filename aliases
 declare module 'lint-staged/index' {
-  declare module.exports: $Exports<'lint-staged'>
+  declare module.exports: $Exports<'lint-staged'>;
 }
 declare module 'lint-staged/index.js' {
-  declare module.exports: $Exports<'lint-staged'>
+  declare module.exports: $Exports<'lint-staged'>;
 }
 declare module 'lint-staged/src/calcChunkSize.js' {
-  declare module.exports: $Exports<'lint-staged/src/calcChunkSize'>
+  declare module.exports: $Exports<'lint-staged/src/calcChunkSize'>;
 }
 declare module 'lint-staged/src/checkPkgScripts.js' {
-  declare module.exports: $Exports<'lint-staged/src/checkPkgScripts'>
+  declare module.exports: $Exports<'lint-staged/src/checkPkgScripts'>;
 }
 declare module 'lint-staged/src/findBin.js' {
-  declare module.exports: $Exports<'lint-staged/src/findBin'>
+  declare module.exports: $Exports<'lint-staged/src/findBin'>;
 }
 declare module 'lint-staged/src/generateTasks.js' {
-  declare module.exports: $Exports<'lint-staged/src/generateTasks'>
+  declare module.exports: $Exports<'lint-staged/src/generateTasks'>;
 }
 declare module 'lint-staged/src/getConfig.js' {
-  declare module.exports: $Exports<'lint-staged/src/getConfig'>
+  declare module.exports: $Exports<'lint-staged/src/getConfig'>;
 }
 declare module 'lint-staged/src/index.js' {
-  declare module.exports: $Exports<'lint-staged/src/index'>
+  declare module.exports: $Exports<'lint-staged/src/index'>;
 }
 declare module 'lint-staged/src/makeCmdTasks.js' {
-  declare module.exports: $Exports<'lint-staged/src/makeCmdTasks'>
+  declare module.exports: $Exports<'lint-staged/src/makeCmdTasks'>;
 }
 declare module 'lint-staged/src/printErrors.js' {
-  declare module.exports: $Exports<'lint-staged/src/printErrors'>
+  declare module.exports: $Exports<'lint-staged/src/printErrors'>;
 }
 declare module 'lint-staged/src/resolveGitDir.js' {
-  declare module.exports: $Exports<'lint-staged/src/resolveGitDir'>
+  declare module.exports: $Exports<'lint-staged/src/resolveGitDir'>;
 }
 declare module 'lint-staged/src/resolveTaskFn.js' {
-  declare module.exports: $Exports<'lint-staged/src/resolveTaskFn'>
+  declare module.exports: $Exports<'lint-staged/src/resolveTaskFn'>;
 }
 declare module 'lint-staged/src/runAll.js' {
-  declare module.exports: $Exports<'lint-staged/src/runAll'>
+  declare module.exports: $Exports<'lint-staged/src/runAll'>;
 }

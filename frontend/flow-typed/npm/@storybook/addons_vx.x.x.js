@@ -14,7 +14,7 @@
  */
 
 declare module '@storybook/addons' {
-  declare module.exports: any
+  declare module.exports: any;
 }
 
 /**
@@ -23,17 +23,17 @@ declare module '@storybook/addons' {
  * needed.
  */
 declare module '@storybook/addons/dist/index' {
-  declare module.exports: any
+  declare module.exports: any;
 }
 
 declare module '@storybook/addons/src/index' {
-  declare module.exports: any
+  declare module.exports: any;
 }
 
 // Filename aliases
 declare module '@storybook/addons/dist/index.js' {
-  declare module.exports: $Exports<'@storybook/addons/dist/index'>
+  declare module.exports: $Exports<'@storybook/addons/dist/index'>;
 }
 declare module '@storybook/addons/src/index.js' {
-  declare module.exports: $Exports<'@storybook/addons/src/index'>
+  declare module.exports: $Exports<'@storybook/addons/src/index'>;
 }

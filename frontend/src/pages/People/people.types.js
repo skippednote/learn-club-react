@@ -39,3 +39,5 @@ export type Action =
   | GetPeopleAction
   | GetPeopleSuccessAction
   | GetPeopleFailureAction;
+
+export type Dispatch = (action: Action) => void;

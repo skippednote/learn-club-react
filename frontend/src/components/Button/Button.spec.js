@@ -14,7 +14,7 @@ describe('Button', () => {
   });
 
   it('call the onClick handler when pressed', () => {
-    const onClick = jest.fn(() => {});
+    const onClick = jest.fn();
     const wrapper = shallow(
       <Button apperence="primary" className="increment" onClick={onClick}>
         Button

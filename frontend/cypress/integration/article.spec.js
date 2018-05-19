@@ -2,10 +2,10 @@ describe('Articles', () => {
   context('ArticleList', () => {
     beforeEach(() => {
       const url =
-        'http://lcr.lndo.site/jsonapi/node/article/somerandom_912312_string?_format=json&fields[node--article]=title,body';
+        'http://lcr.lndo.site/jsonapi/node/article/e4e23b35?_format=json&fields[node--article]=title,body,field_tags,field_image&include=field_tags,field_image&fields[taxonomy_term--tags]=name&fields[file--file]=uri';
       cy.server();
       cy.route('GET', url, 'fixture:article').as('article');
-      cy.visit('/articles/somerandom_912312_string');
+      cy.visit('/articles/e4e23b35');
       cy.wait('@article');
     });
 

@@ -14,6 +14,44 @@
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cur igitur, cum de re conveniat, non malumus usitate loqui? Quis enim redargueret? Illa enim, quae prosunt aut quae nocent, aut bona sunt aut mala, quae sint paria necesse est. Tu enim ista lenius, hic Stoicorum more nos vexat. Duo Reges: constructio interrete. Et hunc idem dico, inquieta sed ad virtutes et ad vitia nihil interesse. Omnis sermo elegans sumi potest, tum varietas est tanta artium, ut nemo sine eo instrumento ad ullam rem illustriorem satis ornatus possit accedere. De malis autem et bonis ab iis animalibus, quae nondum depravata sint, ait optime iudicari. Quid in isto egregio tuo officio et tanta fide-sic enim existimo-ad corpus refers? Semovenda est igitur voluptas, non solum ut recta sequamini, sed etiam ut loqui deceat frugaliter. Hanc se tuus Epicurus omnino ignorare dicit quam aut qualem esse velint qui honestate summum bonum metiantur. Mihi vero, inquit, placet agi subtilius et, ut ipse dixisti, pressius. Longum est enim ad omnia respondere, quae a te dicta sunt."
       }
     },
+    "relationships": {
+      "field_image": {
+        "data": {
+          "type": "file--file",
+          "id": "dae73746-33c0-4db5-b4e2-588872f23021",
+          "meta": {
+            "alt": "peak",
+            "title": "",
+            "width": "500",
+            "height": "352"
+          }
+        },
+        "links": {
+          "self":
+            "http://lcr.lndo.site/jsonapi/node/article/e4e23b35-468d-4f6a-ade5-df1b375dec0d/relationships/field_image",
+          "related":
+            "http://lcr.lndo.site/jsonapi/node/article/e4e23b35-468d-4f6a-ade5-df1b375dec0d/field_image"
+        }
+      },
+      "field_tags": {
+        "data": [
+          {
+            "type": "taxonomy_term--tags",
+            "id": "bf8074f9-35a1-4dbe-bba8-efade3f4e06a"
+          },
+          {
+            "type": "taxonomy_term--tags",
+            "id": "a54fd4f5-fd1c-4c19-a23e-2839aa117769"
+          }
+        ],
+        "links": {
+          "self":
+            "http://lcr.lndo.site/jsonapi/node/article/e4e23b35-468d-4f6a-ade5-df1b375dec0d/relationships/field_tags",
+          "related":
+            "http://lcr.lndo.site/jsonapi/node/article/e4e23b35-468d-4f6a-ade5-df1b375dec0d/field_tags"
+        }
+      }
+    },
     "links": {
       "self":
         "http://lcr.lndo.site/jsonapi/node/article/e4e23b35-468d-4f6a-ade5-df1b375dec0d"
@@ -25,6 +63,41 @@
   },
   "links": {
     "self":
-      "http://lcr.lndo.site/jsonapi/node/article/e4e23b35-468d-4f6a-ade5-df1b375dec0d?_format=json\u0026fields%5Bnode--article%5D=title%2Cbody"
-  }
+      "http://lcr.lndo.site/jsonapi/node/article/e4e23b35-468d-4f6a-ade5-df1b375dec0d?_format=json\u0026fields%5Bfile--file%5D=uri\u0026fields%5Bnode--article%5D=title%2Cbody%2Cfield_tags%2Cfield_image\u0026fields%5Btaxonomy_term--tags%5D=name\u0026include=field_tags%2Cfield_image"
+  },
+  "included": [
+    {
+      "type": "file--file",
+      "id": "dae73746-33c0-4db5-b4e2-588872f23021",
+      "attributes": {
+        "uri": {
+          "value": "public://2018-05/photo-1510041883570-1c5b27d85cb8.jpeg",
+          "url":
+            "/sites/default/files/2018-05/photo-1510041883570-1c5b27d85cb8.jpeg"
+        }
+      },
+      "links": {
+        "self":
+          "http://lcr.lndo.site/jsonapi/file/file/dae73746-33c0-4db5-b4e2-588872f23021"
+      }
+    },
+    {
+      "type": "taxonomy_term--tags",
+      "id": "bf8074f9-35a1-4dbe-bba8-efade3f4e06a",
+      "attributes": { "name": "fasr" },
+      "links": {
+        "self":
+          "http://lcr.lndo.site/jsonapi/taxonomy_term/tags/bf8074f9-35a1-4dbe-bba8-efade3f4e06a"
+      }
+    },
+    {
+      "type": "taxonomy_term--tags",
+      "id": "a54fd4f5-fd1c-4c19-a23e-2839aa117769",
+      "attributes": { "name": "rawew" },
+      "links": {
+        "self":
+          "http://lcr.lndo.site/jsonapi/taxonomy_term/tags/a54fd4f5-fd1c-4c19-a23e-2839aa117769"
+      }
+    }
+  ]
 }

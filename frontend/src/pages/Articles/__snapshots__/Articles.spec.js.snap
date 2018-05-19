@@ -74,7 +74,7 @@ exports[`Articles matches snapshot 1`] = `
       },
     ]
   }
-  className="articleslist"
+  className="articlelist"
 />
 `;
 

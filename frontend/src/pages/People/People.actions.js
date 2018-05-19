@@ -4,7 +4,7 @@ import type {
   GetPeopleAction,
   GetPeopleSuccessAction,
   GetPeopleFailureAction
-} from './people.types';
+} from './People.types';
 
 export function getPeopleRequest(): GetPeopleAction {
   return {

@@ -32,8 +32,16 @@ exports[`Routes matches snapshot 1`] = `
     />
     <Route
       component={[Function]}
-      exact={true}
       path="/people"
+    />
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/articles"
+    />
+    <Route
+      component={[Function]}
+      path="/articles/:id"
     />
   </React.Fragment>
 </ConnectedRouter>

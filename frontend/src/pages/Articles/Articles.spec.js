@@ -1,30 +1,29 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import toJSON from 'enzyme-to-json';
-import { People } from './index';
-import fixture from './People.fixture';
+import { Articles } from './index';
+import fixture from './Articles.fixture';
 
-const props = {
-  people: fixture,
-  error: null,
-  loading: false,
-  dispatch: jest.fn()
-};
-
-describe('People', () => {
+describe('Articles', () => {
   it('matches snapshot', () => {
-    const wrapper = shallow(<People {...props} />);
+    const props = {
+      articles: fixture,
+      error: null,
+      loading: false,
+      dispatch: jest.fn()
+    };
+    const wrapper = shallow(<Articles {...props} />);
     expect(toJSON(wrapper)).toMatchSnapshot();
   });
 
   it('renders a loading message when requesting data', () => {
     const props = {
-      people: [],
+      articles: [],
       error: null,
       loading: true,
       dispatch: jest.fn()
     };
-    const wrapper = shallow(<People {...props} />);
+    const wrapper = shallow(<Articles {...props} />);
     const loading = wrapper.find('.loading');
     expect(loading).toHaveLength(1);
     expect(toJSON(wrapper)).toMatchSnapshot();
@@ -38,15 +37,22 @@ describe('People', () => {
       dispatch: jest.fn()
     };
 
-    const wrapper = shallow(<People {...props} />);
+    const wrapper = shallow(<Articles {...props} />);
     const loading = wrapper.find('.error');
     expect(loading).toHaveLength(1);
     expect(toJSON(wrapper)).toMatchSnapshot();
   });
 
-  it('renders PeopleList component', () => {
-    const wrapper = shallow(<People {...props} />);
-    const counter = wrapper.find('PeopleList');
-    expect(counter).toHaveLength(1);
+  it('renders ArticleList component', () => {
+    const props = {
+      articles: fixture,
+      error: null,
+      loading: false,
+      dispatch: jest.fn()
+    };
+
+    const wrapper = shallow(<Articles {...props} />);
+    const articleslist = wrapper.find('ArticleList');
+    expect(articleslist).toHaveLength(1);
   });
 });

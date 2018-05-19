@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StateMessage matches snapshot 1`] = `
+<StateMessage
+  state="error"
+>
+  Error
+</StateMessage>
+`;

@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Counter matches snapshot 1`] = `
-<header>
+<Header>
   <Link
     replace={false}
     to="/"
@@ -30,6 +30,14 @@ exports[`Counter matches snapshot 1`] = `
         People
       </Link>
     </MenuItem>
+    <MenuItem>
+      <Link
+        replace={false}
+        to="/articles"
+      >
+        Articles
+      </Link>
+    </MenuItem>
   </Menu>
-</header>
+</Header>
 `;

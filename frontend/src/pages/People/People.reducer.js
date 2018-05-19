@@ -1,5 +1,5 @@
 // @flow
-import type { State, Action } from './people.types';
+import type { State, Action } from './People.types';
 
 const PeopleReducer = (
   state: State = { people: [], error: null, loading: false },

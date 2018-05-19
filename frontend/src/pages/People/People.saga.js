@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { put, takeEvery } from 'redux-saga/effects';
-import { getPeopleSuccess, getPeopleFailure } from './people.actions';
+import { getPeopleSuccess, getPeopleFailure } from './People.actions';
 
 export function* getPeople(action) {
   try {

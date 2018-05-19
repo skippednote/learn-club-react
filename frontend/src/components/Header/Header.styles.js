@@ -1,5 +1,10 @@
 import styled from 'react-emotion';
 
+export const Header = styled('header')`
+  text-align: center;
+`;
+Header.displayName = 'Header';
+
 export const Menu = styled('ul')`
   width: 300px;
   margin: 0 auto 2rem;
@@ -10,10 +15,5 @@ export const Menu = styled('ul')`
 `;
 Menu.displayName = 'Menu';
 
-export const MenuItem = styled('li')`
-  a {
-    text-decoration: none;
-    color: #39f;
-  }
-`;
+export const MenuItem = styled('li')``;
 MenuItem.displayName = 'MenuItem';

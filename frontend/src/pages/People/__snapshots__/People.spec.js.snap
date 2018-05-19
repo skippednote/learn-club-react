@@ -1,3 +1,45 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`People matches snapshot 1`] = `<PeopleList />`;
+exports[`People matches snapshot 1`] = `
+<PeopleList
+  error={null}
+  loading={false}
+  people={
+    Array [
+      Object {
+        "id": 0,
+        "name": "Ankur",
+        "role": "CEO",
+      },
+      Object {
+        "id": 1,
+        "name": "Aliya",
+        "role": "Developer",
+      },
+      Object {
+        "id": 2,
+        "name": "Bassam",
+        "role": "Developer",
+      },
+    ]
+  }
+/>
+`;
+
+exports[`People renders a error message when request fails 1`] = `
+<StateMessage
+  className="error"
+  state="error"
+>
+  There was an error loading list of People.
+</StateMessage>
+`;
+
+exports[`People renders a loading message when requesting data 1`] = `
+<StateMessage
+  className="loading"
+  state="loading"
+>
+  Loading the list of People...
+</StateMessage>
+`;

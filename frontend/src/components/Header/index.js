@@ -2,10 +2,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../Logo';
-import { Menu, MenuItem } from './Header.styles';
+import { Menu, MenuItem, Header as Wrapper } from './Header.styles';
 
 const Header = () => (
-  <header>
+  <Wrapper>
     <Link to="/">
       <Logo>⚛</Logo>
     </Link>
@@ -17,8 +17,11 @@ const Header = () => (
       <MenuItem>
         <Link to="/people">People</Link>
       </MenuItem>
+      <MenuItem>
+        <Link to="/articles">Articles</Link>
+      </MenuItem>
     </Menu>
-  </header>
+  </Wrapper>
 );
 
 export default Header;

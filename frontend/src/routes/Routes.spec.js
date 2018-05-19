@@ -18,6 +18,6 @@ describe('Routes', () => {
   it('renders the title', () => {
     const wrapper = shallow(<Routes />);
     const title = wrapper.find('Route');
-    expect(title).toHaveLength(2);
+    expect(title).toHaveLength(4);
   });
 });

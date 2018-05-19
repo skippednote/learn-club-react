@@ -8,10 +8,11 @@ from {
     transform: rotate(360deg);
 }`;
 
-export const LogoDiv = styled('span')`
+export const Logo = styled('span')`
   font-size: 60px;
   color: #39f;
   animation: ${spin} infinite 20s linear;
   display: inline-block;
+  text-align: center;
 `;
-LogoDiv.displayName = 'Logo';
+Logo.displayName = 'Logo';

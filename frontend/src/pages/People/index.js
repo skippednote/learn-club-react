@@ -1,9 +1,10 @@
 // @flow
 import React from 'react';
 import { connect } from 'react-redux';
-import type { Props, Dispatch, Person } from './people.types';
-import { getPeopleRequest } from './people.actions';
+import type { Props, Dispatch, Person } from './People.types';
+import { getPeopleRequest } from './People.actions';
 import PeopleList from '../../components/PeopleList';
+import StateMessage from '../../components/StateMessage';
 
 export class People extends React.Component<Props> {
   async componentDidMount() {
@@ -13,7 +14,24 @@ export class People extends React.Component<Props> {
 
   render() {
     const { people, error, loading }: Props = this.props;
-    return <PeopleList people={people} error={error} loading={loading} />;
+
+    if (error) {
+      return (
+        <StateMessage className="error" state="error">
+          There was an error loading list of People.
+        </StateMessage>
+      );
+    }
+    if (loading) {
+      return (
+        <StateMessage className="loading" state="loading">
+          Loading the list of People...
+        </StateMessage>
+      );
+    }
+    return (
+      people && <PeopleList people={people} error={error} loading={loading} />
+    );
   }
 }
 

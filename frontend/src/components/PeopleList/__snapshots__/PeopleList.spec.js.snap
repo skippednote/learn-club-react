@@ -1,13 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`PeopleList renders a error message when request fails 1`] = `
-<div
-  className="error"
->
-  There was an error loading list of People.
-</div>
-`;
-
 exports[`PeopleList renders a list of people when request passes 1`] = `
 <PeopleList
   className="peoplelist"
@@ -43,12 +35,4 @@ exports[`PeopleList renders a list of people when request passes 1`] = `
     </span>
   </PeopleItem>
 </PeopleList>
-`;
-
-exports[`PeopleList renders a loading message when requesting data 1`] = `
-<div
-  className="loading"
->
-  Loading the list of People...
-</div>
 `;

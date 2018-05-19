@@ -1,4 +1,4 @@
-const fixture = [
+export default [
   {
     id: 0,
     name: 'Ankur',
@@ -15,8 +15,3 @@ const fixture = [
     role: 'Developer'
   }
 ];
-
-module.exports = {
-  fixture,
-  get: jest.fn(() => Promise.resolve({ data: fixture }))
-};

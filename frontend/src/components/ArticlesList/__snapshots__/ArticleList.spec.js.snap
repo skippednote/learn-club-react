@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArticlesList matches snapshot 1`] = `
+<ArticleList
+  className="articlelist"
+>
+  <ArticleItem
+    key="e4e23b35-468d-4f6a-ade5-df1b375dec0d"
+  >
+    <h2>
+      Ergo ita: non posse honeste vivi, nisi honeste vivatur
+    </h2>
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cur igitur, cum de re conveniat, non malumus usitate loqui? Quis enim redargueret? Illa enim, quae prosunt aut quae nocent, aut bona sunt aut mala, quae sint paria necesse est. Tu enim ista lenius, hic Stoicorum more nos vexat. Duo Reges: constructio interrete. Et hunc idem dico, inquieta sed ad virtutes et ad vitia nihil interesse. Omnis sermo elegans sumi potest, tum varietas est tanta artium, ut nemo sine eo instrumento ad ullam rem illustriorem satis ornatus possit accedere. De malis autem et bonis ab iis animalibus, quae nondum depravata sint, ait optime iudicari. Quid in isto egregio tuo officio et tanta fide-sic enim existimo-ad corpus refers? Semovenda est igitur voluptas, non solum ut recta sequamini, sed etiam ut loqui deceat frugaliter. Hanc se tuus Epicurus omnino ignorare dicit quam aut qualem esse velint qui honestate summum bonum metiantur. Mihi vero, inquit, placet agi subtilius et, ut ipse dixisti, pressius. Longum est enim ad omnia respondere, quae a te dicta sunt.",
+        }
+      }
+    />
+    <ArticleMore>
+      <Link
+        replace={false}
+        to="/articles/e4e23b35-468d-4f6a-ade5-df1b375dec0d"
+      >
+        Read more
+      </Link>
+    </ArticleMore>
+  </ArticleItem>
+  <ArticleItem
+    key="e4e23b35-468d-4f6a-ade5-df1b375dec0d"
+  >
+    <h2>
+      Duo Reges: constructio interrete. Et hunc idem dico
+    </h2>
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cur igitur, cum de re conveniat, non malumus usitate loqui? Quis enim redargueret? Illa enim, quae prosunt aut quae nocent, aut bona sunt aut mala, quae sint paria necesse est. Tu enim ista lenius, hic Stoicorum more nos vexat. Duo Reges: constructio interrete. Et hunc idem dico, inquieta sed ad virtutes et ad vitia nihil interesse. Omnis sermo elegans sumi potest, tum varietas est tanta artium, ut nemo sine eo instrumento ad ullam rem illustriorem satis ornatus possit accedere. De malis autem et bonis ab iis animalibus, quae nondum depravata sint, ait optime iudicari. Quid in isto egregio tuo officio et tanta fide-sic enim existimo-ad corpus refers? Semovenda est igitur voluptas, non solum ut recta sequamini, sed etiam ut loqui deceat frugaliter. Hanc se tuus Epicurus omnino ignorare dicit quam aut qualem esse velint qui honestate summum bonum metiantur. Mihi vero, inquit, placet agi subtilius et, ut ipse dixisti, pressius. Longum est enim ad omnia respondere, quae a te dicta sunt.",
+        }
+      }
+    />
+    <ArticleMore>
+      <Link
+        replace={false}
+        to="/articles/e4e23b35-468d-4f6a-ade5-df1b375dec0d"
+      >
+        Read more
+      </Link>
+    </ArticleMore>
+  </ArticleItem>
+</ArticleList>
+`;

@@ -1,16 +1,44 @@
 // @flow
 export type Article = {
-  type: string,
-  id: string,
-  attributes: {
-    title: string,
-    body: {
-      value: string,
-      format: string,
-      processed: string,
-      summary: string
+  data: {
+    type: string,
+    id: string,
+    attributes: {
+      title: string,
+      body: {
+        value: string,
+        format: string,
+        processed: string,
+        summary: string
+      }
     }
-  }
+  },
+  relationships: {
+    field_image: {
+      data?: {
+        id: string,
+        meta: {
+          alt: string
+        }
+      }
+    },
+    field_tags: {
+      data?: Array<{
+        type: string,
+        id: string
+      }>
+    }
+  },
+  included: Array<{
+    type: string,
+    id: string,
+    attributes: {
+      name?: string,
+      uri?: {
+        url: string
+      }
+    }
+  }>
 };
 
 export type State = {

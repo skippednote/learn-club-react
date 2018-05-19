@@ -2,10 +2,10 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import toJSON from 'enzyme-to-json';
 import ArticleItem from './index';
-import fixture from '../../pages/Articles/Articles.fixture';
+import fixture from '../../pages/Article/Article.fixture';
 
 const props = {
-  article: fixture[0]
+  article: fixture
 };
 
 describe('ArticleItem', () => {

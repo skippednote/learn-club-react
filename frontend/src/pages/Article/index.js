@@ -32,11 +32,8 @@ export class Article extends React.Component<Props> {
   }
 }
 
-const mapStateToProps = ({
-  article
-}: {
-  article: Array<ArticleType>
-}): Array<ArticleType> => article;
+const mapStateToProps = ({ article }: { article: ArticleType }): ArticleType =>
+  article;
 
 // $FlowIssue
 export default connect(mapStateToProps)(Article);

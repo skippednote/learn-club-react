@@ -5,9 +5,7 @@ const articlesListURL = `http://lcr.lndo.site/jsonapi/node/article?_format=json&
 
 export function* getArticles(action) {
   try {
-    const {
-      data: { data: articles }
-    } = yield axios.get(articlesListURL);
+    const { data: articles } = yield axios.get(articlesListURL);
     yield put(getArticlesSuccess(articles));
   } catch (error) {
     yield put(getArticlesFailure(error));

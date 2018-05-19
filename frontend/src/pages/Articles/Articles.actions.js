@@ -14,7 +14,7 @@ export function getArticlesRequest(): GetArticlesAction {
 }
 
 export function getArticlesSuccess(
-  articles: Array<Article>
+  articles: Article
 ): GetArticlesSuccessAction {
   return {
     type: 'GET_ARTICLES_SUCCESS',

@@ -30,7 +30,7 @@ exports[`ArticlesList matches snapshot 1`] = `
     key="e4e23b35-468d-4f6a-ade5-df1b375dec0d"
   >
     <h2>
-      Duo Reges: constructio interrete. Et hunc idem dico
+      Cur igitur, cum de re conveniat, non malumus usitate loqui?
     </h2>
     <div
       dangerouslySetInnerHTML={

@@ -9,15 +9,20 @@ type Props = {
 
 class ArticleItem extends Component<Props> {
   render() {
-    const { article } = this.props;
-
+    const {
+      article: {
+        data: {
+          attributes: { title, body }
+        }
+      }
+    } = this.props;
     return (
       <div className="articleItem">
-        <Title className="title">{article.attributes.title}</Title>
+        <Title className="title">{title}</Title>
         <Body
           className="body"
           dangerouslySetInnerHTML={{
-            __html: article.attributes.body.processed
+            __html: body.processed
           }}
         />
       </div>

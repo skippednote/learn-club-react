@@ -2,7 +2,7 @@
 import type { State, Action } from './Articles.types';
 
 const ArticlesReducer = (
-  state: State = { articles: [], error: null, loading: false },
+  state: State = { articles: null, error: null, loading: false },
   action: Action
 ): State => {
   switch (action.type) {

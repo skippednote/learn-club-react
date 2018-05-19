@@ -1,26 +1,54 @@
 // @flow
 export type Article = {
-  type: string,
-  id: string,
-  attributes: {
-    title: string,
-    body: {
-      value: string,
-      format: string,
-      processed: string,
-      summary: string
+  data: Array<{
+    type: string,
+    id: string,
+    attributes: {
+      title: string,
+      body: {
+        value: string,
+        format: string,
+        processed: string,
+        summary: string
+      }
     }
-  }
+  }>,
+  relationships: {
+    field_image: {
+      data?: {
+        id: string,
+        meta: {
+          alt: string
+        }
+      }
+    },
+    field_tags: {
+      data?: Array<{
+        type: string,
+        id: string
+      }>
+    }
+  },
+  included: Array<{
+    type: string,
+    id: string,
+    attributes: {
+      name?: string,
+      uri?: {
+        url: string
+      }
+    }
+  }>
 };
 
 export type State = {
-  articles: Array<Article>,
+  articles: Article | null,
   error: string | null,
   loading: boolean
 };
 
 export type Props = {
-  articles: Array<Article>,
+  articles: Article | null,
   error: string | null,
   loading: boolean,
   dispatch: any
@@ -34,7 +62,7 @@ export type GetArticlesAction = {
 export type GetArticlesSuccessAction = {
   type: 'GET_ARTICLES_SUCCESS',
   loading: boolean,
-  articles: Array<Article>
+  articles: Article
 };
 
 export type GetArticlesFailureAction = {

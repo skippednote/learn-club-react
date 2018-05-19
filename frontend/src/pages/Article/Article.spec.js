@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import toJSON from 'enzyme-to-json';
 import { Article } from './index';
-import fixture from '../Articles/Articles.fixture';
+import fixture from './Article.fixture';
 
 const defaultProps = {
   dispatch: jest.fn(),
@@ -17,7 +17,7 @@ describe('Articles', () => {
   it('matches snapshot', () => {
     const props = {
       ...defaultProps,
-      article: fixture[0],
+      article: fixture,
       error: null,
       loading: false
     };
@@ -55,7 +55,7 @@ describe('Articles', () => {
   it('renders Article component', () => {
     const props = {
       ...defaultProps,
-      article: fixture[0],
+      article: fixture,
       error: null,
       loading: false
     };

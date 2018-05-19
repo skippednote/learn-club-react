@@ -42,17 +42,19 @@ exports[`Articles matches snapshot 1`] = `
 `;
 
 exports[`Articles renders a error message when request fails 1`] = `
-<div
+<StateMessage
   className="error"
+  state="error"
 >
-  There was an error loading list of Articles.
-</div>
+  There was an error loading the Article.
+</StateMessage>
 `;
 
 exports[`Articles renders a loading message when requesting data 1`] = `
-<div
+<StateMessage
   className="loading"
+  state="loading"
 >
-  Loading the list of Articles...
-</div>
+  Loading the Article...
+</StateMessage>
 `;

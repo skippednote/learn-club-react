@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import type { Props, Dispatch, Article } from './Articles.types';
 import { getArticlesRequest } from './Articles.actions';
 import ArticlesList from '../../components/ArticlesList';
+import StateMessage from '../../components/StateMessage';
 
 export class Articles extends React.Component<Props> {
   async componentDidMount() {
@@ -15,13 +16,17 @@ export class Articles extends React.Component<Props> {
     const { articles, error, loading }: Props = this.props;
     if (error) {
       return (
-        <div className="error">
-          There was an error loading list of Articles.
-        </div>
+        <StateMessage className="error" state="error">
+          There was an error loading the list of Articles.
+        </StateMessage>
       );
     }
     if (loading) {
-      return <div className="loading">Loading the list of Articles...</div>;
+      return (
+        <StateMessage className="loading" state="loading">
+          Loading the list of Articles...
+        </StateMessage>
+      );
     }
     return (
       articles && <ArticlesList className="articlelist" articles={articles} />

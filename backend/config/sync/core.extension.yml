@@ -21,6 +21,7 @@ module:
   help: 0
   history: 0
   image: 0
+  jsonapi: 0
   link: 0
   menu_ui: 0
   node: 0
@@ -30,6 +31,7 @@ module:
   quickedit: 0
   rdf: 0
   search: 0
+  serialization: 0
   shortcut: 0
   system: 0
   taxonomy: 0

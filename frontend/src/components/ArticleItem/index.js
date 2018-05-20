@@ -10,12 +10,14 @@ type Props = {
 class ArticleItem extends Component<Props> {
   render() {
     const {
-      article: {
-        data: {
-          attributes: { title, body }
-        }
-      }
+      article: { nodeArticle, taxonomyTermTags }
     } = this.props;
+    const id = Object.keys(nodeArticle)[0];
+    const {
+      attributes: { title, body }
+    } = nodeArticle[id];
+    const tids = taxonomyTermTags && Object.keys(taxonomyTermTags);
+
     return (
       <div className="articleItem">
         <Title className="title">{title}</Title>
@@ -25,6 +27,14 @@ class ArticleItem extends Component<Props> {
             __html: body.processed
           }}
         />
+        <ul>
+          {Array.isArray(tids)
+            ? tids.map(tid => (
+                //$FlowIssue
+                <li key={tid}>{taxonomyTermTags[tid].attributes.name}</li>
+              ))
+            : null}
+        </ul>
       </div>
     );
   }

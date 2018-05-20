@@ -1,8 +1,8 @@
 // @flow
-export type Article = {
-  data: {
-    type: string,
+type nodeArticle = {
+  [key: string]: {
     id: string,
+    type: string,
     attributes: {
       title: string,
       body: {
@@ -11,34 +11,50 @@ export type Article = {
         processed: string,
         summary: string
       }
-    }
-  },
-  relationships: {
-    field_image: {
-      data?: {
-        id: string,
-        meta: {
-          alt: string
-        }
-      }
     },
-    field_tags: {
-      data?: Array<{
-        type: string,
-        id: string
-      }>
+    relationships: {
+      fieldImage: {
+        data: {
+          id: string,
+          type: string
+        }
+      },
+      fieldTags: {
+        data: Array<{
+          id: string,
+          type: string
+        }>
+      }
     }
-  },
-  included: Array<{
-    type: string,
+  }
+};
+
+type fileFile = {
+  [key: string]: {
     id: string,
+    type: string,
     attributes: {
-      name?: string,
-      uri?: {
+      uri: {
         url: string
       }
     }
-  }>
+  }
+};
+
+type taxonomyTermTags = {
+  [key: string]: {
+    id: string,
+    type: string,
+    attributes: {
+      name: string
+    }
+  }
+};
+
+export type Article = {
+  nodeArticle: nodeArticle,
+  fileFile?: fileFile,
+  taxonomyTermTags?: taxonomyTermTags
 };
 
 export type State = {

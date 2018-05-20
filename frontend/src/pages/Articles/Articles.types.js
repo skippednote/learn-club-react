@@ -1,8 +1,8 @@
 // @flow
-export type Article = {
-  data: Array<{
-    type: string,
+type nodeArticle = {
+  [key: string]: {
     id: string,
+    type: string,
     attributes: {
       title: string,
       body: {
@@ -11,44 +11,36 @@ export type Article = {
         processed: string,
         summary: string
       }
-    }
-  }>,
-  relationships: {
-    field_image: {
-      data?: {
-        id: string,
-        meta: {
-          alt: string
-        }
-      }
     },
-    field_tags: {
-      data?: Array<{
-        type: string,
-        id: string
-      }>
-    }
-  },
-  included: Array<{
-    type: string,
-    id: string,
-    attributes: {
-      name?: string,
-      uri?: {
-        url: string
+    relationships: {
+      fieldImage: {
+        data: {
+          id: string,
+          type: string
+        }
+      },
+      fieldTags: {
+        data: Array<{
+          id: string,
+          type: string
+        }>
       }
     }
-  }>
+  }
+};
+
+export type Articles = {
+  nodeArticle: nodeArticle
 };
 
 export type State = {
-  articles: Article | null,
+  articles: Articles | null,
   error: string | null,
   loading: boolean
 };
 
 export type Props = {
-  articles: Article | null,
+  articles: Articles | null,
   error: string | null,
   loading: boolean,
   dispatch: any
@@ -62,7 +54,7 @@ export type GetArticlesAction = {
 export type GetArticlesSuccessAction = {
   type: 'GET_ARTICLES_SUCCESS',
   loading: boolean,
-  articles: Article
+  articles: Articles
 };
 
 export type GetArticlesFailureAction = {

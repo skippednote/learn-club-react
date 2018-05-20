@@ -1,26 +1,32 @@
 // @flow
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import type { Article } from '../../pages/Articles/Articles.types';
+import type { Articles } from '../../pages/Articles/Articles.types';
 import { List, Item, More } from './ArticleList.styles';
 
 type Props = {
-  articles: Article
+  articles: Articles
 };
 
 class ArticleList extends Component<Props> {
   render() {
     const {
-      articles: { data }
+      articles: { nodeArticle }
     } = this.props;
+    const articleIDs = Object.keys(nodeArticle);
+
     return (
       <List className="articlelist">
-        {data.map(({ id, attributes: { title, body } }) => (
-          <Item key={id}>
-            <h2>{title}</h2>
-            <div dangerouslySetInnerHTML={{ __html: body.summary }} />
+        {articleIDs.map(articleID => (
+          <Item key={articleID}>
+            <h2>{nodeArticle[articleID].attributes.title}</h2>
+            <div
+              dangerouslySetInnerHTML={{
+                __html: nodeArticle[articleID].attributes.body.summary
+              }}
+            />
             <More>
-              <Link to={`/articles/${id}`}>Read more</Link>
+              <Link to={`/articles/${articleID}`}>Read more</Link>
             </More>
           </Item>
         ))}

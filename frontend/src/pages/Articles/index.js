@@ -1,7 +1,11 @@
 // @flow
 import React from 'react';
 import { connect } from 'react-redux';
-import type { Props, Dispatch, Article } from './Articles.types';
+import type {
+  Props,
+  Dispatch,
+  Articles as ArticlesType
+} from './Articles.types';
 import { getArticlesRequest } from './Articles.actions';
 import ArticlesList from '../../components/ArticlesList';
 import StateMessage from '../../components/StateMessage';
@@ -37,8 +41,8 @@ export class Articles extends React.Component<Props> {
 const mapStateToProps = ({
   articles
 }: {
-  articles: Array<Article>
-}): Array<Article> => articles;
+  articles: ArticlesType
+}): ArticlesType => articles;
 
 // $FlowIssue
 export default connect(mapStateToProps)(Articles);

@@ -1,6 +1,6 @@
 // @flow
 import type {
-  Article,
+  Articles,
   GetArticlesAction,
   GetArticlesSuccessAction,
   GetArticlesFailureAction
@@ -14,7 +14,7 @@ export function getArticlesRequest(): GetArticlesAction {
 }
 
 export function getArticlesSuccess(
-  articles: Article
+  articles: Articles
 ): GetArticlesSuccessAction {
   return {
     type: 'GET_ARTICLES_SUCCESS',

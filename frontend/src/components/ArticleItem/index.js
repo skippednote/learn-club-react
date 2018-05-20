@@ -1,7 +1,7 @@
 // @flow
 import React, { Component } from 'react';
 import type { Article } from '../../pages/Article/Article.types';
-import { Title, Body } from './ArticleItem.styles';
+import { Title, Body, Tags, TagItem } from './ArticleItem.styles';
 
 type Props = {
   article: Article
@@ -27,14 +27,16 @@ class ArticleItem extends Component<Props> {
             __html: body.processed
           }}
         />
-        <ul>
+        <Tags>
           {Array.isArray(tids)
             ? tids.map(tid => (
-                //$FlowIssue
-                <li key={tid}>{taxonomyTermTags[tid].attributes.name}</li>
+                <TagItem key={tid}>
+                  {/* $FlowIssue */}
+                  {taxonomyTermTags[tid].attributes.name}
+                </TagItem>
               ))
             : null}
-        </ul>
+        </Tags>
       </div>
     );
   }

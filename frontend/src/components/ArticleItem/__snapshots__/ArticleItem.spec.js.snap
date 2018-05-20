@@ -23,9 +23,21 @@ exports[`ArticleItem matches snapshot 1`] = `
       
       <p>Negabat igitur ullam esse artem, quae ipsa a se proficisceretur; Et hi quidem ita non sola virtute finem bonorum contineri putant, ut rebus tamen omnibus virtutem anteponant; Neque enim disputari sine reprehensione nec cum iracundia aut pertinacia recte disputari potest. Suo enim quisque studio maxime ducitur. Aufert enim sensus actionemque tollit omnem.</p>
       
-      <p> </p>",
+      <p> </p>",
       }
     }
   />
+  <ArticleTags>
+    <ArticleTagItem
+      key="bf8074f9-35a1-4dbe-bba8-efade3f4e06a"
+    >
+      fasr
+    </ArticleTagItem>
+    <ArticleTagItem
+      key="a54fd4f5-fd1c-4c19-a23e-2839aa117769"
+    >
+      rawew
+    </ArticleTagItem>
+  </ArticleTags>
 </div>
 `;

@@ -4,11 +4,27 @@ exports[`Articles matches snapshot 1`] = `
 <ArticleItem
   article={
     Object {
-      "data": Object {
-        "attributes": Object {
-          "body": Object {
-            "format": "basic_html",
-            "processed": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cur igitur, cum de re conveniat, non malumus usitate loqui? Quis enim redargueret? Illa enim, quae prosunt aut quae nocent, aut bona sunt aut mala, quae sint paria necesse est. Tu enim ista lenius, hic Stoicorum more nos vexat. Duo Reges: constructio interrete. Et hunc idem dico, inquieta sed ad virtutes et ad vitia nihil interesse. Omnis sermo elegans sumi potest, tum varietas est tanta artium, ut nemo sine eo instrumento ad ullam rem illustriorem satis ornatus possit accedere. De malis autem et bonis ab iis animalibus, quae nondum depravata sint, ait optime iudicari. Quid in isto egregio tuo officio et tanta fide-sic enim existimo-ad corpus refers? Semovenda est igitur voluptas, non solum ut recta sequamini, sed etiam ut loqui deceat frugaliter. Hanc se tuus Epicurus omnino ignorare dicit quam aut qualem esse velint qui honestate summum bonum metiantur. Mihi vero, inquit, placet agi subtilius et, ut ipse dixisti, pressius. Longum est enim ad omnia respondere, quae a te dicta sunt.</p>
+      "fileFile": Object {
+        "dae73746-33c0-4db5-b4e2-588872f23021": Object {
+          "attributes": Object {
+            "uri": Object {
+              "url": "/sites/default/files/2018-05/photo-1510041883570-1c5b27d85cb8.jpeg",
+              "value": "public://2018-05/photo-1510041883570-1c5b27d85cb8.jpeg",
+            },
+          },
+          "id": "dae73746-33c0-4db5-b4e2-588872f23021",
+          "links": Object {
+            "self": "http://lcr.lndo.site/jsonapi/file/file/dae73746-33c0-4db5-b4e2-588872f23021",
+          },
+          "type": "fileFile",
+        },
+      },
+      "nodeArticle": Object {
+        "e4e23b35-468d-4f6a-ade5-df1b375dec0d": Object {
+          "attributes": Object {
+            "body": Object {
+              "format": "basic_html",
+              "processed": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cur igitur, cum de re conveniat, non malumus usitate loqui? Quis enim redargueret? Illa enim, quae prosunt aut quae nocent, aut bona sunt aut mala, quae sint paria necesse est. Tu enim ista lenius, hic Stoicorum more nos vexat. Duo Reges: constructio interrete. Et hunc idem dico, inquieta sed ad virtutes et ad vitia nihil interesse. Omnis sermo elegans sumi potest, tum varietas est tanta artium, ut nemo sine eo instrumento ad ullam rem illustriorem satis ornatus possit accedere. De malis autem et bonis ab iis animalibus, quae nondum depravata sint, ait optime iudicari. Quid in isto egregio tuo officio et tanta fide-sic enim existimo-ad corpus refers? Semovenda est igitur voluptas, non solum ut recta sequamini, sed etiam ut loqui deceat frugaliter. Hanc se tuus Epicurus omnino ignorare dicit quam aut qualem esse velint qui honestate summum bonum metiantur. Mihi vero, inquit, placet agi subtilius et, ut ipse dixisti, pressius. Longum est enim ad omnia respondere, quae a te dicta sunt.</p>
     
     <p>Aliter homines, aliter philosophos loqui putas oportere? Aliter enim explicari, quod quaeritur, non potest. Scaevola tribunus plebis ferret ad plebem vellentne de ea re quaeri. Illud urgueam, non intellegere eum quid sibi dicendum sit, cum dolorem summum malum esse dixerit. Cur igitur, inquam, res tam dissimiles eodem nomine appellas? Quod mihi quidem visus est, cum sciret, velle tamen confitentem audire Torquatum. Nemo nostrum istius generis asotos iucunde putat vivere. De qua Epicurus quidem ita dicit, omnium rerum, quas ad beate vivendum sapientia comparaverit, nihil esse maius amicitia, nihil uberius, nihil iucundius. Isto modo, ne si avia quidem eius nata non esset. Itaque quantum adiit periculum! ad honestatem enim illum omnem conatum suum referebat, non ad voluptatem. Vide ne ista sint Manliana vestra aut maiora etiam, si imperes quod facere non possim. Qui autem voluptate vitam effici beatam putabit, qui sibi is conveniet, si negabit voluptatem crescere longinquitate?</p>
     
@@ -18,9 +34,9 @@ exports[`Articles matches snapshot 1`] = `
     
     <p>Negabat igitur ullam esse artem, quae ipsa a se proficisceretur; Et hi quidem ita non sola virtute finem bonorum contineri putant, ut rebus tamen omnibus virtutem anteponant; Neque enim disputari sine reprehensione nec cum iracundia aut pertinacia recte disputari potest. Suo enim quisque studio maxime ducitur. Aufert enim sensus actionemque tollit omnem.</p>
     
-    <p> </p>",
-            "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cur igitur, cum de re conveniat, non malumus usitate loqui? Quis enim redargueret? Illa enim, quae prosunt aut quae nocent, aut bona sunt aut mala, quae sint paria necesse est. Tu enim ista lenius, hic Stoicorum more nos vexat. Duo Reges: constructio interrete. Et hunc idem dico, inquieta sed ad virtutes et ad vitia nihil interesse. Omnis sermo elegans sumi potest, tum varietas est tanta artium, ut nemo sine eo instrumento ad ullam rem illustriorem satis ornatus possit accedere. De malis autem et bonis ab iis animalibus, quae nondum depravata sint, ait optime iudicari. Quid in isto egregio tuo officio et tanta fide-sic enim existimo-ad corpus refers? Semovenda est igitur voluptas, non solum ut recta sequamini, sed etiam ut loqui deceat frugaliter. Hanc se tuus Epicurus omnino ignorare dicit quam aut qualem esse velint qui honestate summum bonum metiantur. Mihi vero, inquit, placet agi subtilius et, ut ipse dixisti, pressius. Longum est enim ad omnia respondere, quae a te dicta sunt.",
-            "value": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cur igitur, cum de re conveniat, non malumus usitate loqui? Quis enim redargueret? Illa enim, quae prosunt aut quae nocent, aut bona sunt aut mala, quae sint paria necesse est. Tu enim ista lenius, hic Stoicorum more nos vexat. Duo Reges: constructio interrete. Et hunc idem dico, inquieta sed ad virtutes et ad vitia nihil interesse. Omnis sermo elegans sumi potest, tum varietas est tanta artium, ut nemo sine eo instrumento ad ullam rem illustriorem satis ornatus possit accedere. De malis autem et bonis ab iis animalibus, quae nondum depravata sint, ait optime iudicari. Quid in isto egregio tuo officio et tanta fide-sic enim existimo-ad corpus refers? Semovenda est igitur voluptas, non solum ut recta sequamini, sed etiam ut loqui deceat frugaliter. Hanc se tuus Epicurus omnino ignorare dicit quam aut qualem esse velint qui honestate summum bonum metiantur. Mihi vero, inquit, placet agi subtilius et, ut ipse dixisti, pressius. Longum est enim ad omnia respondere, quae a te dicta sunt.</p>
+    <p> </p>",
+              "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cur igitur, cum de re conveniat, non malumus usitate loqui? Quis enim redargueret? Illa enim, quae prosunt aut quae nocent, aut bona sunt aut mala, quae sint paria necesse est. Tu enim ista lenius, hic Stoicorum more nos vexat. Duo Reges: constructio interrete. Et hunc idem dico, inquieta sed ad virtutes et ad vitia nihil interesse. Omnis sermo elegans sumi potest, tum varietas est tanta artium, ut nemo sine eo instrumento ad ullam rem illustriorem satis ornatus possit accedere. De malis autem et bonis ab iis animalibus, quae nondum depravata sint, ait optime iudicari. Quid in isto egregio tuo officio et tanta fide-sic enim existimo-ad corpus refers? Semovenda est igitur voluptas, non solum ut recta sequamini, sed etiam ut loqui deceat frugaliter. Hanc se tuus Epicurus omnino ignorare dicit quam aut qualem esse velint qui honestate summum bonum metiantur. Mihi vero, inquit, placet agi subtilius et, ut ipse dixisti, pressius. Longum est enim ad omnia respondere, quae a te dicta sunt.",
+              "value": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cur igitur, cum de re conveniat, non malumus usitate loqui? Quis enim redargueret? Illa enim, quae prosunt aut quae nocent, aut bona sunt aut mala, quae sint paria necesse est. Tu enim ista lenius, hic Stoicorum more nos vexat. Duo Reges: constructio interrete. Et hunc idem dico, inquieta sed ad virtutes et ad vitia nihil interesse. Omnis sermo elegans sumi potest, tum varietas est tanta artium, ut nemo sine eo instrumento ad ullam rem illustriorem satis ornatus possit accedere. De malis autem et bonis ab iis animalibus, quae nondum depravata sint, ait optime iudicari. Quid in isto egregio tuo officio et tanta fide-sic enim existimo-ad corpus refers? Semovenda est igitur voluptas, non solum ut recta sequamini, sed etiam ut loqui deceat frugaliter. Hanc se tuus Epicurus omnino ignorare dicit quam aut qualem esse velint qui honestate summum bonum metiantur. Mihi vero, inquit, placet agi subtilius et, ut ipse dixisti, pressius. Longum est enim ad omnia respondere, quae a te dicta sunt.</p>
     
     <p>Aliter homines, aliter philosophos loqui putas oportere? Aliter enim explicari, quod quaeritur, non potest. Scaevola tribunus plebis ferret ad plebem vellentne de ea re quaeri. Illud urgueam, non intellegere eum quid sibi dicendum sit, cum dolorem summum malum esse dixerit. Cur igitur, inquam, res tam dissimiles eodem nomine appellas? Quod mihi quidem visus est, cum sciret, velle tamen confitentem audire Torquatum. Nemo nostrum istius generis asotos iucunde putat vivere. De qua Epicurus quidem ita dicit, omnium rerum, quas ad beate vivendum sapientia comparaverit, nihil esse maius amicitia, nihil uberius, nihil iucundius. Isto modo, ne si avia quidem eius nata non esset. Itaque quantum adiit periculum! ad honestatem enim illum omnem conatum suum referebat, non ad voluptatem. Vide ne ista sint Manliana vestra aut maiora etiam, si imperes quod facere non possim. Qui autem voluptate vitam effici beatam putabit, qui sibi is conveniet, si negabit voluptatem crescere longinquitate?</p>
     
@@ -32,74 +48,46 @@ exports[`Articles matches snapshot 1`] = `
     
     <p>&nbsp;</p>
     ",
-          },
-          "title": "Ergo ita: non posse honeste vivi, nisi honeste vivatur",
-        },
-        "id": "e4e23b35-468d-4f6a-ade5-df1b375dec0d",
-        "links": Object {
-          "self": "http://lcr.lndo.site/jsonapi/node/article/e4e23b35-468d-4f6a-ade5-df1b375dec0d",
-        },
-        "relationships": Object {
-          "field_image": Object {
-            "data": Object {
-              "id": "dae73746-33c0-4db5-b4e2-588872f23021",
-              "meta": Object {
-                "alt": "peak",
-                "height": "352",
-                "title": "",
-                "width": "500",
-              },
-              "type": "file--file",
             },
-            "links": Object {
-              "related": "http://lcr.lndo.site/jsonapi/node/article/e4e23b35-468d-4f6a-ade5-df1b375dec0d/field_image",
-              "self": "http://lcr.lndo.site/jsonapi/node/article/e4e23b35-468d-4f6a-ade5-df1b375dec0d/relationships/field_image",
-            },
+            "title": "Ergo ita: non posse honeste vivi, nisi honeste vivatur",
           },
-          "field_tags": Object {
-            "data": Array [
-              Object {
-                "id": "bf8074f9-35a1-4dbe-bba8-efade3f4e06a",
-                "type": "taxonomy_term--tags",
+          "id": "e4e23b35-468d-4f6a-ade5-df1b375dec0d",
+          "links": Object {
+            "self": "http://lcr.lndo.site/jsonapi/node/article/e4e23b35-468d-4f6a-ade5-df1b375dec0d",
+          },
+          "relationships": Object {
+            "fieldImage": Object {
+              "data": Object {
+                "id": "dae73746-33c0-4db5-b4e2-588872f23021",
+                "type": "fileFile",
               },
-              Object {
-                "id": "a54fd4f5-fd1c-4c19-a23e-2839aa117769",
-                "type": "taxonomy_term--tags",
+              "links": Object {
+                "related": "http://lcr.lndo.site/jsonapi/node/article/e4e23b35-468d-4f6a-ade5-df1b375dec0d/field_image",
+                "self": "http://lcr.lndo.site/jsonapi/node/article/e4e23b35-468d-4f6a-ade5-df1b375dec0d/relationships/field_image",
               },
-            ],
-            "links": Object {
-              "related": "http://lcr.lndo.site/jsonapi/node/article/e4e23b35-468d-4f6a-ade5-df1b375dec0d/field_tags",
-              "self": "http://lcr.lndo.site/jsonapi/node/article/e4e23b35-468d-4f6a-ade5-df1b375dec0d/relationships/field_tags",
+            },
+            "fieldTags": Object {
+              "data": Array [
+                Object {
+                  "id": "bf8074f9-35a1-4dbe-bba8-efade3f4e06a",
+                  "type": "taxonomyTermTags",
+                },
+                Object {
+                  "id": "a54fd4f5-fd1c-4c19-a23e-2839aa117769",
+                  "type": "taxonomyTermTags",
+                },
+              ],
+              "links": Object {
+                "related": "http://lcr.lndo.site/jsonapi/node/article/e4e23b35-468d-4f6a-ade5-df1b375dec0d/field_tags",
+                "self": "http://lcr.lndo.site/jsonapi/node/article/e4e23b35-468d-4f6a-ade5-df1b375dec0d/relationships/field_tags",
+              },
             },
           },
+          "type": "nodeArticle",
         },
-        "type": "node--article",
       },
-      "included": Array [
-        Object {
-          "attributes": Object {
-            "uri": Object {
-              "url": "/sites/default/files/2018-05/photo-1510041883570-1c5b27d85cb8.jpeg",
-              "value": "public://2018-05/photo-1510041883570-1c5b27d85cb8.jpeg",
-            },
-          },
-          "id": "dae73746-33c0-4db5-b4e2-588872f23021",
-          "links": Object {
-            "self": "http://lcr.lndo.site/jsonapi/file/file/dae73746-33c0-4db5-b4e2-588872f23021",
-          },
-          "type": "file--file",
-        },
-        Object {
-          "attributes": Object {
-            "name": "fasr",
-          },
-          "id": "bf8074f9-35a1-4dbe-bba8-efade3f4e06a",
-          "links": Object {
-            "self": "http://lcr.lndo.site/jsonapi/taxonomy_term/tags/bf8074f9-35a1-4dbe-bba8-efade3f4e06a",
-          },
-          "type": "taxonomy_term--tags",
-        },
-        Object {
+      "taxonomyTermTags": Object {
+        "a54fd4f5-fd1c-4c19-a23e-2839aa117769": Object {
           "attributes": Object {
             "name": "rawew",
           },
@@ -107,19 +95,18 @@ exports[`Articles matches snapshot 1`] = `
           "links": Object {
             "self": "http://lcr.lndo.site/jsonapi/taxonomy_term/tags/a54fd4f5-fd1c-4c19-a23e-2839aa117769",
           },
-          "type": "taxonomy_term--tags",
+          "type": "taxonomyTermTags",
         },
-      ],
-      "jsonapi": Object {
-        "meta": Object {
-          "links": Object {
-            "self": "http://jsonapi.org/format/1.0/",
+        "bf8074f9-35a1-4dbe-bba8-efade3f4e06a": Object {
+          "attributes": Object {
+            "name": "fasr",
           },
+          "id": "bf8074f9-35a1-4dbe-bba8-efade3f4e06a",
+          "links": Object {
+            "self": "http://lcr.lndo.site/jsonapi/taxonomy_term/tags/bf8074f9-35a1-4dbe-bba8-efade3f4e06a",
+          },
+          "type": "taxonomyTermTags",
         },
-        "version": "1.0",
-      },
-      "links": Object {
-        "self": "http://lcr.lndo.site/jsonapi/node/article/e4e23b35-468d-4f6a-ade5-df1b375dec0d?_format=json&fields%5Bfile--file%5D=uri&fields%5Bnode--article%5D=title%2Cbody%2Cfield_tags%2Cfield_image&fields%5Btaxonomy_term--tags%5D=name&include=field_tags%2Cfield_image",
       },
     }
   }

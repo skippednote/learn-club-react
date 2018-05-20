@@ -19,6 +19,6 @@ describe('ArticlesList', () => {
   it('renders a list of articles', () => {
     const wrapper = shallow(<ArticlesList {...props} />);
     const articleItem = wrapper.find('ArticleItem');
-    expect(articleItem).toHaveLength(2);
+    expect(articleItem).toHaveLength(1);
   });
 });

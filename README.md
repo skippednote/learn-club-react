@@ -3,6 +3,11 @@
 [![Build Status](https://travis-ci.com/skippednote/learn-club-react.svg?branch=master)](https://travis-ci.com/skippednote/learn-club-react)
 [![codecov](https://codecov.io/gh/skippednote/learn-club-react/branch/master/graph/badge.svg)](https://codecov.io/gh/skippednote/learn-club-react)
 
+# Repos
+
+* [Frontend](https://github.com/skippednote/learn-club-react-frontend)
+* [Backend](https://github.com/skippednote/learn-club-react-backend)
+
 ## Setup
 
 These are the preferred but not the only ways to get this project up and running.

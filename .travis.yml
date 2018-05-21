@@ -1,15 +1,13 @@
 sudo: false
 language: node_js
 node_js:
-  - 8
+  - 10
 notifications:
   email: false
 cache:
   directories:
     - ~/.npm
-    - frontend/node_modules
-before_install:
-  - cd frontend
+    - node_modules
 install:
   - npm install
 script:

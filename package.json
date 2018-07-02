@@ -24,6 +24,7 @@
     "test:unit": "react-scripts test --env=jsdom",
     "test:e2e": "npm-run-all --parallel --race start cypress:run",
     "test:coverage": "npm run test:unit -- --coverage && codecov",
+    "test:chromatic": "npm run chromatic",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
     "eject": "react-scripts eject",
@@ -31,7 +32,8 @@
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "chromatic": "chromatic test "
   },
   "devDependencies": {
     "@commitlint/cli": "^6.2.0",
@@ -56,7 +58,8 @@
     "prettier": "^1.12.1",
     "redux-devtools": "^3.4.1",
     "redux-mock-store": "^1.5.1",
-    "serve": "^6.5.6"
+    "serve": "^6.5.6",
+    "storybook-chromatic": "^1.0.0"
   },
   "lint-staged": {
     "*.{js,json,md}": [

@@ -1,5 +1,6 @@
 import { configure } from '@storybook/react';
 import { injectGlobal } from 'react-emotion';
+import 'storybook-chromatic';
 
 injectGlobal`
 body {

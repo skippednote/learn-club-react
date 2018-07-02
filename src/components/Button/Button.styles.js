@@ -10,7 +10,7 @@ const styles = {
     'border-radius': '3px'
   }),
   primary: css({
-    background: '#44c7f4',
+    background: '#15baf3',
     color: 'white'
   }),
   destructive: css({
